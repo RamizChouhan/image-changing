@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <img src="f1.jpg" alt="" id="main-img" style="width: 400px;">
+
+        <div style="display: flex;">
+            <div style="margin-left:10px;">
+                <img src="f2.jpg" alt="" width="100px" class="small-img">
+            </div>
+
+            <div style="margin-left:10px;">
+                <img src="f3.jpg" alt="" width="100px" class="small-img">
+            </div>
+
+            <div style="margin-left:10px;">
+                <img src="f4.jpg" alt="" width="100px" class="small-img">
+            </div>
+
+            <div style="margin-left:10px;">
+                <img src="f5.jpg" alt="" width="100px" class="small-img">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+      let main_img = document.getElementById("main-img");
+      let small_img = document.getElementsByClassName("small-img");
+
+for(let i=0;i<small_img.length;i++){
+    small_img[i].onclick = function(){
+        main_img.src = small_img[i].src;
+    }
+}
+    </script>
+</body>
+</html>
